@@ -1,0 +1,56 @@
+main {
+    display: flex;
+}
+
+
+.containerLogin {
+    width: 65vw;
+    height: 100vh;
+    background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.containerForm {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 2rem;
+        width: 20vw;
+        text-align: center;
+    }
+
+
+    form {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            height: 3vh;
+            width: 15vw;
+            border-radius: 6px;
+        }
+
+        .buttonGroup {
+            width: 15vw;
+            height: 4vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            button{
+                width: 5vw;
+                height: 4vh;
+                font-size: 1rem;
+
+            }
+        }
+    }
+}
