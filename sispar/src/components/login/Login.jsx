@@ -24,8 +24,8 @@ const irParaReembolsos = () => {
                     <input type="password" name="password" id="password" placeholder="Senha" />
                     <a href="">Esqueci minha senha</a>
                     <div className={styles.buttonGroup}>
-                        <button onClick={irParaReembolsos}>Entrar</button>
-                        <button>Criar conta</button>
+                        <button className={styles.buttonEntrar} onClick={irParaReembolsos}>Entrar</button>
+                        <button className={styles.buttonCriar}>Criar conta</button>
                     </div>
                 </form>
             </section>

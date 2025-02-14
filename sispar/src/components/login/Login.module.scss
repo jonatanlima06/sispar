@@ -28,26 +28,44 @@ main {
     }
 
     p {
-        padding-bottom: 32px;
+        padding-bottom: 19px;
         font-weight: 700;
         color: #0844C4;
     }
 
     form {
-        height: 20vh;
+        height: 27vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        //justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 
         input {
             height: 6vh;
             width: 19.16vw;
             border-radius: 6px;
+            border: solid 0.8px;
             padding: 12px, 13px;
             border-color: #CBD4E1;
             color: #898D93;
-        
+        }
+
+        input:hover {
+            border: solid 0.8px #001A3D;
+        }
+
+        input:active {
+            border: solid 0.8px #001A3D;
+        }
+
+        input:invalid {
+            border: solid 0.8px #A60B2F;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 12px, 13px;
         }
 
         .buttonGroup {
@@ -56,12 +74,32 @@ main {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            
-            button{
-                width: 5vw;
-                height: 4vh;
+            padding-top: 20px;
+     
+            .buttonEntrar{
+                width: 7vw;
+                height: 6vh;
                 font-size: 1rem;
+                border-radius: 6px;
+                border: 0.8px;
+                background-color: #001A3D;
+                color: #FFFFFF;
+            }
 
+
+            .buttonCriar{
+                width: 7vw;
+                height: 6vh;
+                font-size: 1rem;
+                border-radius: 6px;
+                border: 0.8px;
+                background-color: #00BEDD;
+                color: #FFFFFF;
+            
+
+            }
+            .buttonCriar:hover{
+                background-color: #00ACC7;
             }
         }
     }

@@ -1,0 +1,93 @@
+header {
+    border: solid red;
+    display: flex;
+    width: 9%;
+    height: 5vh;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.mainReembolsos {
+    height: 95vh;
+    border: solid blue;
+
+
+}
+
+.containerCards {
+    width: 50vw;
+    border: solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+
+}
+
+article {
+    border: solid;
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerStatus {
+    width: 50vw;
+    height: 15vh;
+    border: solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        border: solid orange;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20%;
+        height: 8vh;
+    }
+}
+
+.img1 {
+    border-radius: 6px;
+    padding: 6px;
+
+}
+
+.img2 {
+    border-radius: 6px;
+    padding: 6px;
+
+}
+
+.img3 {
+    border-radius: 6px;
+    padding: 6px;
+
+}
+
+.img4 {
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.containerSistema {
+    display: flex;
+    width: 9vw;
+    border: solid;
+    justify-content: space-between;
+}
+
+.centralizar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30rem;
+}
