@@ -11,7 +11,7 @@ const irParaReembolsos = () => {
 }
 
     return (
-        <main>
+        <main className={styles.containerPrincipal}>
             <section className={styles.containerLogin}>
 
             </section>

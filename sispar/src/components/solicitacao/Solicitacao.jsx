@@ -1,3 +1,4 @@
+import NavBar from "../navbar/NavBar.jsx"
 function Solicitacao() {
     return(
         <>
