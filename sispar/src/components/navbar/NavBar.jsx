@@ -1,4 +1,4 @@
-import {useNavigate} from "react-router"
+import { useNavigate } from "react-router"
 import Historico from "../../assets/Header/Histórico.png"
 import Pesquisa from "../../assets/Header/Botão - Pesquisa.png"
 import Reembolso from "../../assets/Header/Botão - Reembolso.png"
@@ -11,22 +11,21 @@ import styles from "./NavBar.module.scss"
 
 function NavBar() {
 
-const navigate = useNavigate()
+    const navigate = useNavigate()
 
-    return(
+    return (
         <nav className={styles.navBarEstilo}>
             <button> <img src={Fechar} alt="Botão abrir e fechar" /></button>
             <section>
-                <img src={Perfil} alt="Imagem de perfil"/>
-                <button onClick={()=>{navigate("/reembolsos")}}><img src={Home} alt="Página inicial" /></button>
-                <button onClick={()=>{navigate("/solicitacao")}}><img src={Reembolso} alt="Solicitar reembolso" /></button>
+                <img src={Perfil} alt="Imagem de perfil" />
+                <button onClick={() => { navigate("/reembolsos") }}><img src={Home} alt="Página inicial" /></button>
+                <button onClick={() => { navigate("/solicitacao") }}><img src={Reembolso} alt="Solicitar reembolso" /></button>
                 <button><img src={Pesquisa} alt="Botão de análise" /></button>
                 <button><img src={Historico} alt="Botão de histórico" /></button>
-
             </section>
-
-            <button onClick={()=>{navigate("/")}} className={styles.buttonSair}><img src={Sair} alt="Sair" /></button>
-        
+            <div className={styles.buttonSair}>
+                <button onClick={() => { navigate("/") }}><img src={Sair} alt="Sair" /></button>
+            </div>
         </nav>
     )
 }

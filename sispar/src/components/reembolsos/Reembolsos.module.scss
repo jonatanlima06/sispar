@@ -1,11 +1,12 @@
 .layout {
     display: flex;
+    font-family: 'Inter';
 }
 
 header {
-    border: solid red;
+    //border: solid red;
     display: flex;
-    width: 9%;
+    width: 10%;
     height: 5vh;
     justify-content: space-evenly;
     align-items: center;
@@ -15,14 +16,33 @@ header {
 
 .mainReembolsos {
     height: 95vh;
-    border: solid blue;
+    //border: solid blue;
+    display: flex;
+    width: 100%;
+    
+}
 
+.centralizar {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20rem;
+    //border: solid;
 
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    p {
+        font-weight: 400;
+    }
 }
 
 .containerCards {
     width: 50vw;
-    border: solid red;
+    //border: solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +51,8 @@ header {
 }
 
 article {
-    border: solid;
+    border: solid #CBD4E1 0.8px;
+    border-radius: 6px;
     width: 15vw;
     height: 20vh;
     display: flex;
@@ -43,13 +64,14 @@ article {
 .containerStatus {
     width: 50vw;
     height: 15vh;
-    border: solid green;
+    border: solid #CBD4E1 0.8px;
+    border-radius: 6px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     div {
-        border: solid orange;
+        //border: solid orange;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -61,37 +83,37 @@ article {
 .img1 {
     border-radius: 6px;
     padding: 6px;
+    background-color: #00BEDD;
 
 }
 
 .img2 {
     border-radius: 6px;
     padding: 6px;
+    background-color: #E56700;
 
 }
 
 .img3 {
     border-radius: 6px;
     padding: 6px;
+    background-color: #007A6A;
 
 }
 
 .img4 {
     border-radius: 6px;
     padding: 6px;
+    background-color: #A60B2F;
 }
 
 .containerSistema {
     display: flex;
     width: 9vw;
-    border: solid;
+    //border: solid;
     justify-content: space-between;
+    color: #0844C4;
+    font-weight: 400;
+    padding-top: 15px;
 }
 
-.centralizar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 30rem;
-}
