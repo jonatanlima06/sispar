@@ -1,0 +1,85 @@
+.layoutSolicitacao{
+    display: flex;
+}
+
+.headerSolicitacao {
+    border: solid;
+    width: 20vw;
+}
+
+.containerPrincipalSolicitacao{
+    width: 95%;
+}
+
+.formSolicitacao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: solid;
+
+}
+
+
+input, select{
+    width: 100%;
+    height: 4vh;
+    border-radius: 6px;
+    border: solid 0.8px #CBD4E1;
+}
+
+label{
+    color: #23282F;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+// Estilização do grupo 1
+.grupo1 {
+    border: solid green;
+    width: 30%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputNome {
+    //border: solid blue;
+    width: 45%;
+}
+
+.inputEmpresa {
+    //border: solid red;
+    width: 25%;
+
+}
+
+.inputPrestContas {
+    //border: solid purple;
+    width: 25%;
+
+}
+
+.inputMotivo {
+    width: 100%;
+    input {
+        height: 9vh;
+    }
+
+}
+
+//Estilização da barra
+
+.barraVertical {
+    height: 25vh;
+    background-color: #CBD4E1;
+    width: 0.1vw;
+}
+
+// Estilização do grupo2
+
+.grupo2 {
+    border: solid blue;
+    width: 65%;
+}
