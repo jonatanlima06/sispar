@@ -3,7 +3,7 @@
 }
 
 .headerSolicitacao {
-    border: solid;
+    //border: solid;
     width: 20vw;
 }
 
@@ -11,11 +11,15 @@
     width: 95%;
 }
 
+.mainSolicitacao{
+    //display: flex;
+}
+
 .formSolicitacao {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: solid;
+    //border: solid;
 
 }
 
@@ -35,7 +39,7 @@ label{
 
 // Estilização do grupo 1
 .grupo1 {
-    border: solid green;
+    //border: solid green;
     width: 30%;
     height: 25vh;
     display: flex;
@@ -80,6 +84,79 @@ label{
 // Estilização do grupo2
 
 .grupo2 {
-    border: solid blue;
+    height: 25vh;
+    //border: solid blue;
     width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.inputData {
+    //border: solid green;
+    width: 25%;
+}
+
+.selectDespesa {
+    //border: solid blue;
+    width: 30%;
+}
+
+.centroDeCusto {
+    //border: solid violet;
+    width: 40%;
+}
+
+.ordem, .divisoes, .pep, .distancia {
+    width: 8%;
+
+}
+
+.moeda, .valorKm, .valorFaturado, .despesa{
+    width: 11%;
+}
+
+.botoes {
+    //border: solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botaoSalvar {
+    background-color: #001A3D;
+    color: white;
+    width: 3vw;
+
+}
+
+.botaoDeletar{
+    background-color: #00BEBD;
+    width: 2vw;
+
+}
+
+table{
+    //background-color: aqua;
+    width: 100%;
+    border: solid #CBD4E1 0.8px;
+    border-collapse: collapse;
+    padding-top: 5px;
+    border-radius: 6px;
+    
+}
+
+th {
+    background-color: #CBD4E1;
+    font-weight: 400;
+    font-size: 1rem;
+   
+}
+
+td, th {
+    border: solid #F1F4F9 0.8px;
+    text-align: center;
+}
+
+
