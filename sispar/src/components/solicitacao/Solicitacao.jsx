@@ -144,7 +144,7 @@ function Solicitacao() {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td><img src={Motivo} alt="Motivo" /></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
