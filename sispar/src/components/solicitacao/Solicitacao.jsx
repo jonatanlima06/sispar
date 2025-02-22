@@ -4,6 +4,9 @@ import Seta from "../../assets/Dashboard/Vector_seta.png"
 import styles from "./Solicitacao.module.scss"
 import Lixeira from "../../assets/Solicitacao/lixeira.png"
 import Motivo from "../../assets/Solicitacao/motivo.png"
+import Deletar from "../../assets/Solicitacao/deletar.png"
+import Check from "../../assets/Solicitacao/check.png"
+import X from "../../assets/Solicitacao/x.png"
 
 
 function Solicitacao() {
@@ -77,13 +80,17 @@ function Solicitacao() {
                                 <label htmlFor=""> Ord. Int. </label>
                                 <input type="number" name="" id="" />
                             </div>
+                            <div className={styles.pep}>
+                                <label htmlFor=""> PEP </label>
+                                <input type="number" name="" id="" />
+                            </div>
                             <div className={styles.divisoes}>
                                 <label htmlFor=""> Div. </label>
                                 <input type="number" name="" id="" />
                             </div>
-                            <div className={styles.pep}>
-                                <label htmlFor=""> PEP </label>
-                                <input type="number" name="" id="" />
+                            <div className={styles.distancia}>
+                                <label htmlFor=""> Dist / KM </label>
+                                <input type="text" />
                             </div>
                             <div className={styles.moeda}>
                                 <label htmlFor=""> Moeda </label>
@@ -94,25 +101,21 @@ function Solicitacao() {
                                     <option value="">USD</option>
                                 </select>
                             </div>
-                            <div className={styles.distancia}>
-                                <label htmlFor=""> Dist / KM </label>
-                                <input type="text" />
-                            </div>
                             <div className={styles.valorKm}>
                                 <label htmlFor=""> Valor / KM </label>
+                                <input type="number" name="" id="" />
+                            </div>
+                            <div className={styles.despesa}>
+                                <label htmlFor=""> Val. Taxa </label>
                                 <input type="number" name="" id="" />
                             </div>
                             <div className={styles.valorFaturado}>
                                 <label htmlFor=""> Val. Faturado </label>
                                 <input type="number" name="" id="" />
                             </div>
-                            <div className={styles.despesa}>
-                                <label htmlFor=""> Despesa </label>
-                                <input type="number" name="" id="" />
-                            </div>
                             <div className={styles.botoes}>
                                 <button className={styles.botaoSalvar}> + Salvar </button>
-                                <button className={styles.botaoDeletar}> Del </button>
+                                <button className={styles.botaoDeletar}> <img src={Deletar} alt="Deletar"/> </button>
                             </div>
                         </div>
                     </form>
@@ -156,11 +159,83 @@ function Solicitacao() {
                                 <td></td>
                                 <td></td>
                             </tr>
+                            <tr>
+                                <td><img src={Lixeira} alt="Lixeira" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src={Motivo} alt="Motivo" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src={Lixeira} alt="Lixeira" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src={Motivo} alt="Motivo" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src={Lixeira} alt="Lixeira" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src={Motivo} alt="Motivo" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr className={styles.vazia}>
+
+                            </tr>
                         </tbody>
-
-
-
                     </table>
+                    <section className={styles.finalSolicitacao}>
+                        <div className={styles.grupo3}>
+                            <div className={styles.inputFinal}>
+                                <div className={styles.inputTf}>
+                                    <label htmlFor="">Total Faturado</label>
+                                    <input type="text" name="" id="" value={0.00} />
+                                </div>
+                                <div className={styles.inputTd}>
+                                    <label htmlFor="">Total Despesa</label>
+                                    <input type="text" name="" id="" value={0.00} />
+                                </div>
+                            </div>
+                            <div className={styles.finalBotoes}>
+                                <button className={styles.buttonCheck}><img src={Check} alt="Enviar Análise" /> Enviar para Análise </button>
+                                <button className={styles.buttonX}><img src={X} alt="Cancelar" /> Cancelar Solicitação </button>
+                            </div>
+                        </div>
+                    </section>
 
 
                 </main>
